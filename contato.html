@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contacter - Coiffeur Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produits</a></li>
+						<li><a href="contato.html">Contacter</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome">Nom e prenom</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="votreemail@dominio.com">
+
+				<label for="telefone">Portable</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Message</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<fieldset>
+					<legend>Comment préférez-vous que nous vous contactions?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Portable</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Quel horaire préférez-vous?</legend>
+					<select>
+						<option>Matin</option>
+						<option>Après-midi</option>
+						<option>Nuit</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked>Vous souhaitez recevoir nos actualités par e-mail?</label>
+
+				<input type="submit" value="Envoyer le formulaire" class="enviar">
+			</form>
+
+			<table>
+				<tr>
+					<td>Jour</td>
+					<td>Horaire</td>
+				</tr>
+				<tr>
+					<td>Lundi</td>
+					<td>8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td>Mercredi</td>
+					<td>8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td>Vendredi</td>
+					<td>8h ~ 20h</td>
+				</tr>
+			</table>
+		</main>
+
+		<footer>
+			<img src="logo-branco.png" alt="Logo da Barbearia Alura">
+			<p class="copyright">&copy; Copyright Coiffeur Alura - 2021</p>
+		</footer>
+	</body>
+</html>
